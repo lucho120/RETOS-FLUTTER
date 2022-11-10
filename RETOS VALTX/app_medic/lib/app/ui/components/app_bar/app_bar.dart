@@ -1,10 +1,10 @@
-import 'package:app_medic/core/theme/theme_general.dart';
 import 'package:flutter/material.dart';
+import 'package:app_medic/core/theme/theme_general.dart';
 
 final myAppBar = AppBar(
     iconTheme: IconThemeData(color: myDefaultBackground),
-    elevation: 0.0,
     backgroundColor: Colors.white,
+    elevation: 0.0,
     title: ListTile(
       contentPadding: const EdgeInsets.all(0.0),
       leading: Text(

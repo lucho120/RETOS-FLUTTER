@@ -15,16 +15,20 @@ class MyDrawer extends StatelessWidget {
         scrollDirection: Axis.vertical,
         children: [
           SizedBox(
-            height: responsive.height > responsive.width
-                ? responsive.hp(10.0)
-                : responsive.wp(10.0),
-            child: const DrawerHeader(
-                margin: EdgeInsets.all(0.0),
-                padding: EdgeInsets.all(0.0),
-                child: Image(
-                    image: NetworkImage(
-                        'https://guecort.com/wp-content/uploads/2022/07/logo-wordpress.png'))),
-          ),
+              height: responsive.height > responsive.width
+                  ? responsive.hp(10.0)
+                  : responsive.wp(10.0),
+              child: DrawerHeader(
+                  decoration: const BoxDecoration(
+                      border: Border(
+                          top: BorderSide(
+                              color: Color.fromRGBO(160, 160, 160, 1)))),
+                  margin: const EdgeInsets.all(0.0),
+                  padding: const EdgeInsets.only(bottom: 10.0),
+                  child: FadeInImage.assetNetwork(
+                      placeholder: 'assets/images/loading.gif',
+                      image:
+                          'https://guecort.com/wp-content/uploads/2022/07/logo-wordpress.png'))),
           const ListTile(
             leading: Icon(Icons.home),
             title: Text('D A S H B O A R D'),
