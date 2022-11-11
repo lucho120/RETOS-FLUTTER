@@ -6,7 +6,8 @@ A new Flutter project.
 
 
 # UI HOME MEDIC
-https://github.com/lucho120/RETOS-FLUTTER/tree/main/RETOS%20VALTX/app_medic/blob/main/assets/demo/demo_app_medic_responsive.gif
+![demo_app_medic_responsive](https://user-images.githubusercontent.com/60797176/201254691-e65b7541-6d54-4f78-b9ac-480238c58b8c.gif)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
