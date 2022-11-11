@@ -10,7 +10,7 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     final Responsive responsive = Responsive.of(context);
     return Drawer(
-      backgroundColor: Color.fromARGB(255, 237, 208, 79),
+      backgroundColor: const Color.fromARGB(255, 237, 208, 79),
       child: ListView(
         scrollDirection: Axis.vertical,
         children: [
@@ -25,10 +25,7 @@ class MyDrawer extends StatelessWidget {
                               color: Color.fromRGBO(160, 160, 160, 1)))),
                   margin: const EdgeInsets.all(0.0),
                   padding: const EdgeInsets.only(bottom: 10.0),
-                  child: FadeInImage.assetNetwork(
-                      placeholder: 'assets/images/loading.gif',
-                      image:
-                          'https://guecort.com/wp-content/uploads/2022/07/logo-wordpress.png'))),
+                  child: Image.asset('assets/images/logo.png'))),
           const ListTile(
             leading: Icon(Icons.home),
             title: Text('D A S H B O A R D'),

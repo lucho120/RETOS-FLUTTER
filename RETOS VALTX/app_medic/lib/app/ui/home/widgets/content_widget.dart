@@ -1,6 +1,6 @@
-import 'package:app_medic/app/ui/components/drawer/drawer.dart';
 import 'package:flutter/material.dart';
 
+import 'package:app_medic/app/ui/components/drawer/drawer.dart';
 import 'package:app_medic/app/ui/home/widgets/doctors_widget.dart';
 import 'package:app_medic/app/ui/home/widgets/specialties_widget.dart';
 import 'package:app_medic/app/ui/home/widgets/statistic_widget.dart';
