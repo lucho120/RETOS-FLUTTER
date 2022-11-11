@@ -31,22 +31,25 @@ class ContentWidget extends StatelessWidget {
           ),
         );
       } else if (constrains.maxWidth < 1100) {
-        return Row(
-          children: [
-            Expanded(
-              child: Column(
-                children: [
-                  StatisticWidget(responsive: responsive),
-                  Expanded(
-                    child: SpecialtiesWidget(responsive: responsive),
-                  )
-                ],
+        return Padding(
+          padding: const EdgeInsets.only(left: 8.0),
+          child: Row(
+            children: [
+              Expanded(
+                child: Column(
+                  children: [
+                    StatisticWidget(responsive: responsive),
+                    Expanded(
+                      child: SpecialtiesWidget(responsive: responsive),
+                    )
+                  ],
+                ),
               ),
-            ),
-            Expanded(
-              child: DoctorsWidget(responsive: responsive),
-            )
-          ],
+              Expanded(
+                child: DoctorsWidget(responsive: responsive),
+              )
+            ],
+          ),
         );
       } else {
         return Container(
