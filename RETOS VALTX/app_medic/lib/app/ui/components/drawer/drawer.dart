@@ -10,7 +10,7 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     final Responsive responsive = Responsive.of(context);
     return Drawer(
-      backgroundColor: myDefaultBackground,
+      backgroundColor: Color.fromARGB(255, 237, 208, 79),
       child: ListView(
         scrollDirection: Axis.vertical,
         children: [

@@ -57,7 +57,6 @@ class SpecialtiesWidget extends StatelessWidget {
         ),
         Expanded(
           child: ListView.builder(
-            shrinkWrap: true,
             scrollDirection:
                 responsive.width < 500 ? Axis.horizontal : Axis.vertical,
             itemCount: mySpecialties.length,

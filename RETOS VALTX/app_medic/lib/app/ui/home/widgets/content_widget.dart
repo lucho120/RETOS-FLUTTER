@@ -18,10 +18,7 @@ class ContentWidget extends StatelessWidget {
           margin: const EdgeInsets.only(left: 20.0, right: 10.0),
           child: Column(
             children: [
-              Expanded(
-                flex: 5,
-                child: StatisticWidget(responsive: responsive),
-              ),
+              StatisticWidget(responsive: responsive),
               Expanded(
                 flex: 4,
                 child: SpecialtiesWidget(responsive: responsive),
@@ -34,29 +31,22 @@ class ContentWidget extends StatelessWidget {
           ),
         );
       } else if (constrains.maxWidth < 1100) {
-        return Container(
-          margin: const EdgeInsets.only(left: 10.0, right: 10.0),
-          child: Row(
-            children: [
-              Expanded(
-                child: Column(
-                  children: [
-                    Expanded(
-                      flex: 2,
-                      child: StatisticWidget(responsive: responsive),
-                    ),
-                    Expanded(
-                      flex: responsive.height < 412 ? 2 : 3,
-                      child: SpecialtiesWidget(responsive: responsive),
-                    )
-                  ],
-                ),
+        return Row(
+          children: [
+            Expanded(
+              child: Column(
+                children: [
+                  StatisticWidget(responsive: responsive),
+                  Expanded(
+                    child: SpecialtiesWidget(responsive: responsive),
+                  )
+                ],
               ),
-              Expanded(
-                child: DoctorsWidget(responsive: responsive),
-              )
-            ],
-          ),
+            ),
+            Expanded(
+              child: DoctorsWidget(responsive: responsive),
+            )
+          ],
         );
       } else {
         return Container(
